@@ -1,0 +1,30 @@
+{
+	"name": "WRAP+ UNLIMITED FOR LIFETIME",
+	"description": "Python script to get WRAP+ VPN premium data for lifetime ",
+	"repository": "https://github.com/TheCaduceus/WARP-UNLIMITED-ADVANCED/tree/sys-env",
+        "website": "https://thecaduceus.eu.org",
+        "success_url": "https://github.com/TheCaduceus/WRAP-UNLIMITED-ADVANCED",
+	"env": {
+		"WARP_CLIENT_ID": {
+			"description": "Enter your WARP Client ID.",
+			"required": true
+		},
+		"SEND_LOG": {
+			"description": "Get notification on Telegram regarding total data generated, total attempts & failed attempts. Value can be True or False only.",
+			"required": true	
+		},
+		"TELEGRAM_BOT_TOKEN": {
+			"description": "Enter Telegram Bot Token from @BotFather. Required if SEND_LOG is True.",
+			"required": false
+		},
+	        "CHAT_ID": {
+			"description": "Enter chat id of chat (channel or group) where you want to get log message from your bot like -1234567890 (for private chats) or @mychannel and @mygroup (for public chats). You can also pass ID of a particular user to get log message as personal message by bot but make sure to send /start command to bot as personal message (in order to authorize the bot).",
+			"required": false
+	        },
+	        "HIDE_WC_ID": {
+			"description": "To hide your WARP Client ID from log message. Value can be True or False only.",
+			"required": false
+		}
+	},
+    	"stack": "container"
+}
